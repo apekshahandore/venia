@@ -1,0 +1,21 @@
+@use "../common/mixin";
+@use "../common/variables";
+
+.cart_heading{
+    padding: 33px 0 40px 0;
+    text-align: center;
+button{
+    background-color: blue;
+    width: 102px;
+    height: 8px;
+    border: none;
+}
+    h1{
+        font: normal normal 600 48px/45px Source Serif Pro;
+        color: $black;
+        padding-bottom: 10px;
+    }
+}
+.receviewed_Prod{
+    padding-top: 164px;
+}

@@ -1,0 +1,25 @@
+@use "../common/mixin";
+@use "../common/variables";
+
+
+.btn_lab{
+    padding: 11px 111px;
+    background-color: $primary-brand;
+    border: none;
+    border-radius: 28px;
+    color: $white;
+    font: normal normal bold 14px/16px Muli;
+    text-transform: uppercase;
+}
+.checkout_btn{
+    padding: 11px 73px;
+
+}
+.all_result{
+    padding: 13px 41px;
+    position: sticky;
+    left: 20%;
+    transform: translateY(-50%);
+   
+
+}

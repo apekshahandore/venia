@@ -1,0 +1,104 @@
+@use "../common/mixin";
+@use "../common/variables";
+.mobilefilter_menu{
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 90%;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px #00000026;
+    z-index: 100;
+    max-height: 100vh;
+    overflow-y: auto;
+    display: none;
+ 
+    h6{
+        font: normal normal 600 16px/24px Muli;
+        color: #181C24;
+    }
+    nav{
+    background-color: $gray-l1;
+    padding: 11px 24px 13px 24px;
+    position: sticky;
+    top: 0;
+ 
+        ul {
+            display: flex;
+            justify-content: space-between;
+                li{
+                font: normal normal 600 16px/24px Muli;
+                color: #1D1D1B;
+                letter-spacing: 0.32px;
+                }
+            }
+        }
+    .mobile_btnsection{
+            padding: 23px 0 16px 24px;
+            .selected_btn{
+                padding: 4px 16px;
+                background-color: #545D63;
+                font: normal normal 600 16px/24px Muli;
+                color: $white;
+                border-radius: 6px;
+                img{
+                    width: 12px;
+                    height: 12px;
+                    background-color: $white;
+                }
+            }
+            .clear_btn{
+                background: none;
+                text-decoration: underline;
+                border: none;
+                padding-left: 16px;
+                font: normal normal 600 14px/24px Muli;
+                color:$gray-d2;
+            }
+        }
+
+    .color{
+        padding: 16px 0 32px 24px;
+        border-bottom: 2px solid $gray-l1;
+        border-top: 2px solid $gray-l1;
+            .filter_color{ 
+                display: flex;
+                flex-wrap: wrap;
+            .color_box{
+                min-width: 64px;
+                height: 40px;
+                border-radius: 6px;
+                margin: 17px 3px 0 0;
+                }
+                .linear{
+                    background: transparent linear-gradient(180deg, #AF52FF 0%, #7950E8 16%, #4F5ADA 29%, #57CB76 43%, #EBC250 56%, #FF8810 69%, #E32F0F 83%, #BF1919 100%) 0% 0% no-repeat padding-box;
+                }
+          
+    }
+    
+    }
+    
+    .attribute{    
+        padding: 16px 0 32px 24px;
+        border-bottom: 2px solid $gray-l1;
+        a{
+            font-size: $font-size-14;
+            color: $gray-d2;
+            line-height: 24px;
+            text-decoration: underline;
+        }
+        .checkbox{  
+            padding-top: 16px;
+            input{
+                width: 24px;
+                height: 24px;
+                border: 2px solid $gray-m1;
+              
+            }
+        label{
+            margin-left: 0;
+        }}
+    }
+  
+}

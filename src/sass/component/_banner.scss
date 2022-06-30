@@ -1,0 +1,36 @@
+@use "../common/mixin";
+@use "../common/variables";
+@use "../common//typography";
+
+.main_banner{
+    padding: 32px;
+ 
+    .leftside_banner{
+        background-color:$black-light;
+        color:$white ;
+        height: 352px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      h1 {
+        font: normal normal 600 48px/60px Source Serif Pro;
+    }
+    .head_border{
+       background-color:$primary-brand;
+        width:108px; 
+        height:8px;
+        margin-top: 3rem;
+    }
+    }
+   
+    .rightside_banner{
+        padding:16px 0 ;
+        img{
+            object-fit: fill;
+            height: 320px;
+        }
+    }
+}
+

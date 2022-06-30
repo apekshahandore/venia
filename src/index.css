@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container {
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1600px) {
+    .container,.procard-container {
+        max-width: 1600px;
+    }
+}
+@media (min-width: 1900px) {
+    .container,.procard-container {
+        max-width: 1900px;
+    }
+}
+@media (min-width: 768px) {
+  .container,.procard-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container,.procard-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container,.procard-container {
+    width: 1180px;
+  }
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.procard-container{
+  padding: 2rem 7rem 2.7rem 7rem;
+  margin-right: auto;
+  margin-left: auto; 
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,ul{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+li{
+line-height: inherit;
+}
+fieldset{
+border: 0;
+}
+img{
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+/* Common CSS */
+body{
+font-family: 'proxima-nova', sans-serif;
+font-size: 16px;
+line-height: 24px;
+font-weight: normal;
+color: var(--primary-text-color);
+overflow-x: hidden;
+}
+body.on-open-menu{
+overflow: hidden;
+}
+input,
+select{
+line-height: 38px;
+padding: 0 15px;
+border: 1px solid #956A53;  
+background: transparent;
+width: 100%;
+height: 40px;
+}
+
+.align_center{
+text-align: center;
+}
+/* Top Offer Text*/
+/* .container {
+max-width: 100%;
+padding: 0 34px;
+margin:  0 auto;
+
+} */
+/* rating component style */
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-outer::before {
+  content: '\f005  \f005  \f005  \f005  \f005';
+  font-family: 'FontAwesome';
+  font-weight: 500;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.stars-inner::before {
+  content: '\f005  \f005  \f005  \f005  \f005';
+  font-size: 16px;
+  font-family: 'FontAwesome';
+  font-weight: 500;
+  color:black;
+}
+
+@media only screen and (max-width: 480px){
+  .main_banner{
+    display: flex;
+      flex-direction: column-reverse;
+  }
+}

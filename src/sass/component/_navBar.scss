@@ -1,0 +1,96 @@
+@use "../common/mixin";
+@use "../common/variables";
+
+
+header{
+   background: $white 0% 0% no-repeat padding-box;
+   border-bottom: 1px solid $gray-m1;
+   position: sticky;
+   top:0;
+   max-width: 100%;
+   margin: 0 auto;
+z-index: 999;
+a{
+    @include font;
+    color: $black-light;
+
+}
+nav{
+    padding: 16px 0;
+    .mobile_menu{
+        display:none;
+    }
+    .logo{ 
+       
+        img{ 
+            max-width:7rem;
+            max-height: 2rem;
+            object-fit:fill;
+            vertical-align: middle;
+        }
+       
+       
+        
+    }
+    .main_menus{
+        ul{   
+            display: flex;
+            justify-content: center;
+           
+           li{
+            &:not(:last-child){
+                padding-right: 32px;
+             } 
+             span{
+                text-align: right;
+                font: normal normal 600 16px/24px Muli;
+            }
+           }
+            
+     }
+    }
+    .right_nav{
+        ul{   
+            display: flex;
+            justify-content: space-between;
+      
+          li{
+            display: flex;
+            span{
+                text-align: right;
+                font: normal normal 600 16px/24px Muli;
+            }
+            img{
+                width:24px;
+                height:24px;
+                vertical-align: middle;
+                padding-right: 8px;
+                background: transparent 0% 0% no-repeat padding-box;
+                &:not(:last-child){
+                    margin-right: 8px;
+                   
+                }
+            }
+          }
+          .cart_counter{
+            text-align: center;
+            font-size: 14px;
+            position: absolute;
+            top: 10px;
+            right: 35px;
+            width: 20px;
+            height: 20px;
+            color: #fff;
+            background-color:$gray-m1;
+            border-radius: 50%;
+            
+          }
+        } 
+       
+       
+       
+     }
+}
+
+}
+
