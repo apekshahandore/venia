@@ -10,14 +10,27 @@
     figure{
       border: 1px solid $gray-l1;
       &:not(:last-child){
-      margin-bottom: 10px;
+      margin-bottom: 14px;
     
     }
       img{
-        height:120px;
+        height:110px;
         padding: 0.5em;
      
       }
+     
+    }
+  
+    button{
+      height:30px;
+      width: 100%;
+      background:transparent;
+      border: none;
+      img{
+        padding: 0.8em;
+      
+      }
+  
     }
   }
   .main_image{

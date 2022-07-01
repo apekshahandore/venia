@@ -18,7 +18,14 @@
     }
     .right_details{
         padding-top: 24px;
-      
+        button{
+            background-color: blue;
+            width: 102px;
+            height: 8px;
+            border: none;
+            display: block;
+            margin-top: 32px;
+        }
     }
     .left_details{
         padding-left: 37px;
@@ -31,8 +38,18 @@
                   width: 24px;
                   height: 24px;
                   margin-right: 16px;
+                  vertical-align: middle;
               }
-        }} 
-    
+        }
+    button{
+        display: none;
+        background-color: blue;
+        width: 102px;
+        height: 8px;
+        border: none;
+       
+    }
+} 
+      
 }
 

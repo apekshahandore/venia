@@ -12,17 +12,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
         align-items: center;
 
-      h1 {
+  
+    h1 {
         font: normal normal 600 48px/60px Source Serif Pro;
-    }
+            }
+        h1.hide_head {
+        display: none;
+         }
+
+    
+    
+    
     .head_border{
        background-color:$primary-brand;
         width:108px; 
         height:8px;
         margin-top: 3rem;
     }
+  
     }
    
     .rightside_banner{

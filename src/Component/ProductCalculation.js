@@ -1,23 +1,32 @@
 import Button from "./Button";
 import lockImg from "../Images/lock.svg";
-import PP_BTN from "../Images/PP_BTN.jpg"
+import PP_BTN from "../Images/PP_BTN.jpg";
+import React, {useEffect} from "react";
+import { cartActions } from "../redux/handleCartSlice";
+import { useDispatch, useSelector } from "react-redux";
 const ProductCalculation=()=>{
-   
+    const cart = useSelector((state) => state.handleCart.cartTotalAmount);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(cartActions.getTotals());
+      }, [cart, dispatch]);
+    
     return(
         <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 product_summary'>
         <h3>Pricing Summary</h3>
         <div className="product_calculation">
             <div className="calculation_row">
                 <span>Subtotal</span>
-                <span>$ 388.00</span>
+                <span>${cart}</span>
             </div>
             <div className="calculation_row">
                 <span>Coupon</span>
-                <span>- $ 77.60</span>
+                <span>-$77.60</span>
             </div>
             <div className="calculation_row">
                 <span>Gift Card</span>
-                <span>- $ 100.00</span>
+                <span>-$100.00</span>
             </div>
             <div className="calculation_row">
                 <span>Estimated tax</span>
@@ -29,7 +38,7 @@ const ProductCalculation=()=>{
             </div>
             <div className="calculation_row">
                 <b>Estimated Total</b>
-                <b>$ 233.68</b>
+                <b>${cart}</b>
             </div>
             
            

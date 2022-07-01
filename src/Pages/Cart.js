@@ -9,7 +9,8 @@ const Cart=()=>{
     const cartItems = useSelector((st) => st.handleCart.items);
     
     const itemsInCart = cartItems.map(item => {
-        return (<SingleCartItem  key={item.price} id={item.id} title={item.title} price={item.price} img={item.image}/>)
+        return (
+        <SingleCartItem item={item} key={item.price} id={item.id} title={item.title} price={item.price} img={item.image}/>)
       }) 
 
     const accordionList = accordionData.map((list)=>{
@@ -22,12 +23,12 @@ const Cart=()=>{
         <button></button>
       </div>
     <div className='aem-Grid aem-Grid--12'>
-        <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12'>
+        <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12' style={{paddingRight:"32px"}}>
          {itemsInCart}
          {accordionList}
          </div>
   
-           <ProductCalculation />
+        <ProductCalculation />
     
      
     </div>

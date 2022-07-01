@@ -295,6 +295,7 @@ footer .footer-bottom .left-nav li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -302,6 +303,10 @@ footer .footer-bottom .left-nav li a {
 
 .main_banner .leftside_banner h1 {
   font: normal normal 600 48px/60px Source Serif Pro;
+}
+
+.main_banner .leftside_banner h1.hide_head {
+  display: none;
 }
 
 .main_banner .leftside_banner .head_border {
@@ -336,12 +341,23 @@ footer .footer-bottom .left-nav li a {
 }
 
 .product_image .images_column figure:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .product_image .images_column figure img {
-  height: 120px;
+  height: 110px;
   padding: 0.5em;
+}
+
+.product_image .images_column button {
+  height: 30px;
+  width: 100%;
+  background: transparent;
+  border: none;
+}
+
+.product_image .images_column button img {
+  padding: 0.8em;
 }
 
 .product_image .main_image figure {
@@ -801,6 +817,15 @@ footer .footer-bottom .left-nav li a {
   padding-top: 24px;
 }
 
+.prod_Description .right_details button {
+  background-color: blue;
+  width: 102px;
+  height: 8px;
+  border: none;
+  display: block;
+  margin-top: 32px;
+}
+
 .prod_Description .left_details {
   padding-left: 37px;
   padding-top: 24px;
@@ -815,6 +840,15 @@ footer .footer-bottom .left-nav li a {
   width: 24px;
   height: 24px;
   margin-right: 16px;
+  vertical-align: middle;
+}
+
+.prod_Description .left_details button {
+  display: none;
+  background-color: blue;
+  width: 102px;
+  height: 8px;
+  border: none;
 }
 
 @use "../common/mixin";
@@ -6212,6 +6246,13 @@ footer .footer-bottom .left-nav li a {
   .main_banner .leftside_banner h1 {
     font: normal normal 600 36px/42px Source Serif Pro;
   }
+  .main_banner .leftside_banner h1.hide_head {
+    display: block;
+  }
+  .main_banner .leftside_banner .head_border {
+    width: 102px;
+    margin-top: 1rem;
+  }
   .main_banner .rightside_banner {
     padding: 0;
   }
@@ -6331,6 +6372,9 @@ footer .footer-bottom .left-nav li a {
   }
   .prod_Description .right_details {
     padding-top: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .prod_Description .right_details p {
     max-width: 100%;
@@ -6338,8 +6382,18 @@ footer .footer-bottom .left-nav li a {
   .prod_Description .right_details h5 {
     text-align: center;
   }
+  .prod_Description .right_details button {
+    display: none;
+  }
   .prod_Description .left_details {
     padding: 24px 0 40px 0;
+  }
+  .prod_Description .left_details h5 {
+    text-align: center;
+  }
+  .prod_Description .left_details button {
+    display: block;
+    margin: 24px 35%;
   }
   .cart_heading {
     padding: 33px 0 40px 0;

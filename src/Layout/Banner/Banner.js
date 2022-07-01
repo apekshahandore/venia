@@ -3,7 +3,10 @@ const Banner=({text})=>{
 return(
     <div className="aem-Grid aem-Grid--12 main_banner">
         <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 leftside_banner">
-           <div><h1>{text}</h1></div> 
+           <div>
+           <h1>{text}</h1>
+           <h1 className="hide_head">Outerwear</h1>
+           </div> 
             <div className="head_border"></div>
         </div>
         <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 rightside_banner">

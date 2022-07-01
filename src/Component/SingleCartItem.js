@@ -1,19 +1,21 @@
 import {useDispatch,useSelector} from "react-redux";
 import { cartActions } from "../redux/handleCartSlice";
-const  SingleCartItem =({img, title, price, id})=>{
-
+const  SingleCartItem =({img, title, price, id, item})=>{
     const dispatch = useDispatch();
+
     const removeItemFromCartHandler = () => {
         dispatch(cartActions.removeItemFromCart(id));
       }
-    const count = useSelector((state) => state.handleCart.value)
+
+    // const count = useSelector((state) => state.handleCart.value)
+    const count= item.cartQuantity;
     const increseCartQuntity = () => {
-        dispatch(cartActions.incresQntity());
+        dispatch(cartActions.incresQntity(item));
       }
       const decreseCartQuntity = () => {
-        dispatch(cartActions.decrQntity());
+        dispatch(cartActions.decrQntity(item));
       }
-    
+   
     const subtotal= count * price;
     
     let productTitle= title?.split(' ').slice(0,3).join(' ');
@@ -39,11 +41,12 @@ const  SingleCartItem =({img, title, price, id})=>{
                                <div className="center">
                                 <button  
                                  aria-label="Decrement value"
-                                onClick={decreseCartQuntity}>-</button>
+                                 onClick={decreseCartQuntity}>-</button>
                                 <input type="text" value={count} />
                                 <button 
                                  aria-label="Increment value"
                                  onClick={increseCartQuntity}>+</button>
+                              
                                 </div>
                         </div>
        
