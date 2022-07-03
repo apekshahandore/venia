@@ -42,25 +42,15 @@ export const handleCartSlice = createSlice({
     },
 
     incresQntity(state,action) {
-            // state.value += 1
-
             const itemIndex = state.items.findIndex(
               (item) => item.id === action.payload.id
             );
            state.items[itemIndex].cartQuantity += 1;
            localStorage.setItem("cartItems", JSON.stringify(state.items));
+
           },
           
     decrQntity(state,action){
-      //   if(state.value === 1){
-
-      //   const removeItemId = action.payload;
-      //   state.items = state.items.filter(item => {
-      //               return item.id !== removeItemId;
-      //           }) 
-      //   }else{
-      //   state.value -= 1
-      //  }
       const itemIndex = state.items.findIndex(
         (item) => item.id === action.payload.id
       );

@@ -7,13 +7,13 @@ return(<>
             <h1>{productTitle}</h1>
         </div>
     
-        <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 right_details">
+        <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 right_details">
             <h5>Description</h5>
             <p>{description}</p>
             <button></button>
         </div>
 
-        <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 left_details">
+        <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 left_details">
         <h5>Details</h5>
             <div className="aem-Grid aem-Grid--12 ">
                 <div className="aem-GridColumn aem-GridColumn--default--6">

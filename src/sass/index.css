@@ -871,6 +871,10 @@ footer .footer-bottom .left-nav li a {
   padding-bottom: 10px;
 }
 
+.cartLeft {
+  padding-right: 32px;
+}
+
 .receviewed_Prod {
   padding-top: 164px;
 }
@@ -6212,7 +6216,7 @@ footer .footer-bottom .left-nav li a {
   }
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6364,6 +6368,11 @@ footer .footer-bottom .left-nav li a {
     font: normal normal 600 20px/30px Muli;
     padding-top: 8px 0 17px 0;
   }
+  .product_details .product_response {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .prod_Description .mainprod_head {
     text-align: center;
   }
@@ -6439,6 +6448,151 @@ footer .footer-bottom .left-nav li a {
   }
   .mobileview_filterheader {
     display: block;
+  }
+  .cartLeft {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  header .right_nav ul .texthide {
+    display: none !important;
+  }
+  .card-container .card {
+    padding-bottom: 16px;
+  }
+  .card-container .card:not(:nth-child(2n)) {
+    padding-right: 21px !important;
+  }
+  .card-container .card figure img {
+    max-width: 100%;
+    height: 12rem !important;
+    -o-object-fit: fill;
+       object-fit: fill;
+    padding: 0.5em 2em;
+  }
+  .card-container .card .product-details .product-title {
+    max-width: 100%;
+    color: #172026;
+    font: normal normal bold 16px/20px Muli;
+  }
+  .card-container .card .product-details .product-price {
+    font: normal normal 600 16px/20px Muli;
+    color: #172026;
+  }
+  .procard-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .product_details {
+    padding-left: 0;
+  }
+  .prod_Description .mainprod_head {
+    text-align: center;
+  }
+  .prod_Description h5 {
+    font: normal normal 600 16px/25px Muli;
+  }
+  .prod_Description .right_details {
+    padding-top: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .prod_Description .right_details p {
+    max-width: 100%;
+  }
+  .prod_Description .right_details h5 {
+    text-align: center;
+  }
+  .prod_Description .right_details button {
+    display: none;
+  }
+  .prod_Description .left_details {
+    padding: 24px 0 40px 0;
+  }
+  .prod_Description .left_details h5 {
+    text-align: center;
+  }
+  .prod_Description .left_details button {
+    display: block;
+    margin: 24px 45% 0 45%;
+  }
+  footer .footer-top {
+    padding: 60px 0 80px 0;
+  }
+  footer .footer-top .submenu__heading {
+    font: normal normal 600 16px/24px Muli;
+    color: #172026;
+    padding-bottom: 16px;
+    margin-top: 32px !important;
+  }
+  footer .footer-top a, footer .footer-top p {
+    font: normal normal normal 16px/24px Muli;
+    color: #545D63;
+    padding-bottom: 8px;
+  }
+  footer .footer-top p {
+    max-width: 100%;
+  }
+  footer .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 32px 0 42px 0;
+  }
+  footer .footer-bottom .copyright {
+    padding: 25px 0 38px 0;
+  }
+  footer .footer-bottom .left-nav {
+    padding-top: 34px;
+  }
+  footer .footer-bottom .left-nav ul {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 20%;
+  }
+  .single_cartItem {
+    padding-right: 0;
+    margin-bottom: 33px;
+  }
+  .product_summary {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 24px 32px 40px 0;
+  }
+  .product_summary .paypal_btn img {
+    margin-left: 75%;
+  }
+  .filter_aside .filter_container .checkbox input {
+    width: 18px;
+    height: 18px;
+  }
+  .cartLeft {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .product_summary {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 24px 32px 40px 0;
+  }
+  .product_summary .paypal_btn img {
+    margin-left: 13rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

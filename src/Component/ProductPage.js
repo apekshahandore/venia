@@ -15,13 +15,13 @@ const dispatch = useDispatch();
     let productTitle= title?.split(' ').slice(0,3).join(' ');
     return(<>
     {/* productdetail page left part */}
-        <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 product_image">
+        <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 product_image">
         
             <div className="aem-Grid aem-Grid--12 container">
                 <div className="category_left">
                     <a href="">Clothing</a> / <a href="">Women's</a> / <a href="">OuterWear</a>
                 </div>
-                <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--hide images_column">
+                <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--hide aem-GridColumn--phone--hide images_column">
                     <figure> 
                     <img src={image} alt={title}/>  
                     </figure>
@@ -41,7 +41,7 @@ const dispatch = useDispatch();
                     <img classname="imagesdown_arr" src={require('../Images/chevron-down.svg').default}alt={title}/>  
                     </button>
                 </div>
-                <div className="aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 main_image">
+                <div className="aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 main_image">
                     <figure> 
                     <img src={image} alt={title}/>  
                     </figure>
@@ -50,7 +50,7 @@ const dispatch = useDispatch();
         </div>
 
         {/* productdetail page right part */}
-        <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 product_details">
+        <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 product_details">
         {/* category */}
         <div className="category">
          <a href="">Clothing</a> / <a href="">Women's</a> / <a href="">OuterWear</a>

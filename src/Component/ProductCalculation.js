@@ -13,7 +13,7 @@ const ProductCalculation=()=>{
       }, [cart, dispatch]);
     
     return(
-        <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 product_summary'>
+        <div className='aem-GridColumn aem-GridColumn--default--4  aem-GridColumn--tablet--12 aem-GridColumn--phone--12 product_summary'>
         <h3>Pricing Summary</h3>
         <div className="product_calculation">
             <div className="calculation_row">

@@ -23,7 +23,7 @@ const Cart=()=>{
         <button></button>
       </div>
     <div className='aem-Grid aem-Grid--12'>
-        <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12' style={{paddingRight:"32px"}}>
+        <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 cartLeft'>
          {itemsInCart}
          {accordionList}
          </div>

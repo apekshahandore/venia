@@ -1,5 +1,6 @@
-import {useDispatch,useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import { cartActions } from "../redux/handleCartSlice";
+
 const  SingleCartItem =({img, title, price, id, item})=>{
     const dispatch = useDispatch();
 
@@ -7,7 +8,7 @@ const  SingleCartItem =({img, title, price, id, item})=>{
         dispatch(cartActions.removeItemFromCart(id));
       }
 
-    // const count = useSelector((state) => state.handleCart.value)
+
     const count= item.cartQuantity;
     const increseCartQuntity = () => {
         dispatch(cartActions.incresQntity(item));
@@ -15,8 +16,7 @@ const  SingleCartItem =({img, title, price, id, item})=>{
       const decreseCartQuntity = () => {
         dispatch(cartActions.decrQntity(item));
       }
-   
-    const subtotal= count * price;
+
     
     let productTitle= title?.split(' ').slice(0,3).join(' ');
         return(<>
@@ -35,7 +35,7 @@ const  SingleCartItem =({img, title, price, id, item})=>{
                             <p>Size : Medium</p>
                             <p>Color : Medium</p>
                             <p>${price}</p>
-                            <p>SubTotal={subtotal.toFixed(2)}</p>
+                       
                         </div>
                         <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 singlecart_right'>
                                <div className="center">
@@ -53,7 +53,7 @@ const  SingleCartItem =({img, title, price, id, item})=>{
                     </div>
                 </div>
    
-                <div className='aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--hide aem-GridColumn--phone--hide singleCart_action'>
+                <div className='aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--hide singleCart_action'>
                 <ul>
                     <li><button><img src={require('../Images/edit-2.svg').default} alt='like' />Edit Items</button></li>
                     <li><button onClick={removeItemFromCartHandler}><img src={require('../Images/trash-2.svg').default} alt='like' />Remove</button></li>
@@ -61,7 +61,6 @@ const  SingleCartItem =({img, title, price, id, item})=>{
                 </ul>
                         
                 </div>
-     
             </div>            
                        
 

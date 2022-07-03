@@ -23,7 +23,7 @@ return(
                   setClicked(false);
                 }}/> 
           }
-            <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--9 aem-GridColumn--phone--9 logo">
+            <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--2 aem-GridColumn--phone--9 logo">
               <Link to="#" className="mobile_menu" onClick={()=>{setClicked(true)}}>
                 <img style={{width:"18px" ,height:"12px"}} src={require('../../Images/align-justify.svg').default} alt='search'/>
               </Link>
@@ -33,7 +33,7 @@ return(
               </NavLink>
             </div>
 
-            <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--hide aem-GridColumn--phone--hide main_menus">
+            <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--8 aem-GridColumn--phone--hide main_menus">
               <ul>
                {navMainMenu.map((val)=>{
                  return(
@@ -42,7 +42,7 @@ return(
               </ul>
             </div>
 
-            <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--3 aem-GridColumn--phone--3 right_nav">
+            <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--2 aem-GridColumn--phone--3 right_nav">
               <ul>
                 {/* {leftMenu.map((val)=>{
                   return(
