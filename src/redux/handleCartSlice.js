@@ -56,15 +56,8 @@ export const handleCartSlice = createSlice({
         (item) => item.id === action.payload.id
       );
 
-      if (state.items[itemIndex].cartQuantity > 1) {
+      if (state.items[itemIndex].cartQuantity >= 1) {
         state.items[itemIndex].cartQuantity -= 1;
-
-      } else if (state.items[itemIndex].cartQuantity === 1)
-       {
-        state.items= state.items.filter(
-          (item) => item.id !== action.payload.id
-        );
-     
       }
       state.cartTotalAmount -= state.items[itemIndex].price;
       localStorage.setItem("cartItems", JSON.stringify(state.items));
