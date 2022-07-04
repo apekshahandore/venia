@@ -74,7 +74,7 @@ const dispatch = useDispatch();
         <Sizes />
 
         {/* Quantity */}
-        <Quantity />
+        <Quantity/>
 
         {/* add to cart button */}
         <Button text="ADD TO CART" className="btn_lab" onClick={()=>addProduct(product)}/>

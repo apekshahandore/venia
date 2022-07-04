@@ -46,6 +46,7 @@ export const handleCartSlice = createSlice({
               (item) => item.id === action.payload.id
             );
            state.items[itemIndex].cartQuantity += 1;
+           state.cartTotalAmount += state.items[itemIndex].price;
            localStorage.setItem("cartItems", JSON.stringify(state.items));
 
           },
@@ -65,6 +66,7 @@ export const handleCartSlice = createSlice({
         );
      
       }
+      state.cartTotalAmount -= state.items[itemIndex].price;
       localStorage.setItem("cartItems", JSON.stringify(state.items));
     
       },   
