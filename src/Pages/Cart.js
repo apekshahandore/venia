@@ -5,7 +5,7 @@ import ProductCalculation from '../Component/ProductCalculation';
 import SingleCartItem from '../Component/SingleCartItem';
 import { accordionData } from '../Data';
 const Cart=()=>{
-
+ 
     const cartItems = useSelector((st) => st.handleCart.items);
     
     const itemsInCart = cartItems.map(item => {
@@ -32,11 +32,12 @@ const Cart=()=>{
     
      
     </div>
-        <div className='aem-Grid aem-Grid--12 container receviewed_Prod' style={{paddingTop:"64px"}}>
+        <div className='aem-Grid aem-Grid--12 container receviewed_Prod'>
             <div className='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--hide aem-GridColumn--phone--hide'>
-              <div className='cart_heading' style={{paddingBottom:"33px"}}><h1>Recently Viewed</h1></div>
-              <div className='slider' style={{paddingBottom:"128px"}}>
+              <div className='cart_heading'><h1>Recently Viewed</h1></div>
+              <div className='slider'>
               <CarouselContainer/>
+             
               </div>
               
               </div>

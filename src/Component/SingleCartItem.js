@@ -39,11 +39,13 @@ const  SingleCartItem =({img, title, price, id, item})=>{
                         </div>
                         <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 singlecart_right'>
                                <div className="center">
-                                <button  
+                                <button 
+                                 type="button"
                                  aria-label="Decrement value"
                                  onClick={decreseCartQuntity}>-</button>
                                 <input type="text" value={count} />
                                 <button 
+                                type="button"
                                  aria-label="Increment value"
                                  onClick={increseCartQuntity}>+</button>
                               

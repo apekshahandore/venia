@@ -77,7 +77,7 @@ const dispatch = useDispatch();
         <Quantity/>
 
         {/* add to cart button */}
-        <Button text="ADD TO CART" className="btn_lab" onClick={()=>addProduct(product)}/>
+        <Button text="ADD TO CART" arialabel="add to cart" className="btn_lab" onClick={()=>addProduct(product)}/>
 
         {/* product response */}
             <div className="product_response">

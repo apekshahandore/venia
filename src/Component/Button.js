@@ -1,6 +1,6 @@
-const Button=({text, onClick,className, img})=>{
+const Button=({text, onClick,className, img, arialabel})=>{
 return (<>
-<button className={className} onClick={onClick} type="button">
+<button  aria-label={arialabel} className={className} onClick={onClick} type="button">
 {img ?<img src={img} alt=" "/>:null  }
 {text}
 </button></>);

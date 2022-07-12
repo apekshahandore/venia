@@ -45,7 +45,7 @@ const ProductDetails=()=>{
     return(
         <div className="aem-Grid aem-Grid--12 procard-container">
       
-        {loading? <h1>Loading...</h1>: <>
+        {loading? <h1 className="loading_content" style={{padding:"24px", textAlign:"center"}}>Loading...</h1>: <>
         <ProductPage  
           image={product.image}  
           title={product.title} 

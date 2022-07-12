@@ -48,7 +48,9 @@
 .product_details{
   padding-left: 37px;
   .category{
-    a{@include font-two;}
+    a{
+      @include font-two;
+    }
   }
   h1{
     @include font-three;

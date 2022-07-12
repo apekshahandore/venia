@@ -2,7 +2,7 @@ import logo from "../../Images/logo1.PNG";
 
 import { NavLink, Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
-import { navMainMenu,leftMenu } from "../../Data";
+import { navMainMenu } from "../../Data";
 import { useState } from "react";
 import MobileSideBar from "./MobileFilterSidebar";
 const NavBar=()=>{
@@ -16,8 +16,8 @@ const st = useSelector((state) => {
 );
 let totalQty = st.length;
 return(
-        <header className="header ">
-          <nav className="aem-Grid aem-Grid--12 container">
+        <header className="header">
+          <nav className="aem-Grid aem-Grid--12 container" role="navigation">
           {
                 isclicked && <MobileSideBar onClose={()=>{
                   setClicked(false);
@@ -44,10 +44,6 @@ return(
 
             <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--2 aem-GridColumn--phone--3 right_nav">
               <ul>
-                {/* {leftMenu.map((val)=>{
-                  return(
-                 <li key={val.id}><NavLink to={val.link}><img src={val.icon} alt={val.alt} />{val.label}{totalQty}</NavLink></li>)
-                  })} */}
                   <li><img src={require('../../Images/search.svg').default} alt='search'/><span className="texthide">Search</span></li>
                   <li className="texthide"><img src={require('../../Images/user.svg').default} alt='signin'/><span>Sign in</span></li>
                   <li><NavLink to="/cart"><img src={require('../../Images/shopping-bag.svg').default} alt='cart' /><span className="cart_counter">{totalQty}</span></NavLink></li>

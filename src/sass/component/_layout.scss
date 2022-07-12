@@ -37,8 +37,9 @@
             font: normal normal 600 36px/42px Source Serif Pro;
     
         }
-        h1.hide_head {
+        h2.hide_head {
             display: block;
+            font: normal normal 600 36px/42px Source Serif Pro;
              }
 
              .head_border{
@@ -62,19 +63,19 @@
 
  .card-container{
     .card{
-        padding-bottom: 16px;
+        height: 18rem;
+        padding:  0 11px 16px 0;
+        &:nth-child(even){
+            padding-right: 0 !important;
+            padding-left: 11px !important;
+          }
+       
       
-        &:not(:nth-child(2n)){
-            padding-right: 21px !important;
-        }
         figure {
-            border: 1px solid $gray-l1;
-            margin: 0;
-            line-height: 0;
+            margin: auto;
             img {
                 max-width: 100%;
                 height:10rem !important;
-                object-fit: fill;
                 padding:0.5em 2em;      
             }
         } .product-details{
@@ -93,6 +94,7 @@
                
             }
     }
+
 }
 footer{
     .footer-top{
@@ -289,16 +291,17 @@ h1{
     }
     .card-container{
         .card{
-            padding-bottom: 16px;
-          
-            &:not(:nth-child(2n)){
-                padding-right: 21px !important;
-            }
+
+            padding:  0 11px 16px 0;
+             &:nth-child(even){
+            padding-right: 0 !important;
+            padding-left: 11px !important;
+          }
             figure {
                
                 img {
                     max-width: 100%;
-                    height:12rem !important;
+                    height:15rem !important;
                     object-fit: fill;
                     padding:0.5em 2em;      
                 }
@@ -425,6 +428,27 @@ h1{
 }
 
 @media (min-width: 1024px) and (max-width: 1200px){
+    .card-container{
+        .card{
+            padding:  0 21px 16px 0;
+            // padding-bottom: 16px;
+            // padding-right: 21px !important;
+             &:nth-child(even){
+            padding-right: 0 !important;
+            padding-left: 21px !important;
+          }
+          
+            figure {
+               
+                img {
+                    max-width: 100%;
+                    height:15rem !important;
+                    object-fit: fill;
+                    padding:0.5em 2em;      
+                }
+            } 
+        }
+    }
     .product_summary{
         border: none;
         box-shadow: none;

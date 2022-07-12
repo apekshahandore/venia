@@ -16,7 +16,7 @@ const ProductContainer=({filter, loading})=>{
 
     return(<>
         <div className="aem-Grid aem-Grid--12 card-container" style={{paddingTop:"24px"}}>
-            {loading? <h1>Loading...</h1>:
+            {loading? <h1 className="loading_content" style={{padding:"24px", textAlign:"center"}}>Loading...</h1>:
 
        // here is user currentposts insted of filter(cards data) because of pagination//
                  <> {currentPosts.map((val,index)=>{

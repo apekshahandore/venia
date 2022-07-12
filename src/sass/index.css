@@ -305,7 +305,7 @@ footer .footer-bottom .left-nav li a {
   font: normal normal 600 48px/60px Source Serif Pro;
 }
 
-.main_banner .leftside_banner h1.hide_head {
+.main_banner .leftside_banner h2.hide_head {
   display: none;
 }
 
@@ -876,7 +876,15 @@ footer .footer-bottom .left-nav li a {
 }
 
 .receviewed_Prod {
-  padding-top: 164px;
+  padding-top: 64px;
+}
+
+.receviewed_Prod .cart_heading {
+  padding-bottom: 33px;
+}
+
+.receviewed_Prod .slider {
+  padding-bottom: 128px;
 }
 
 @use "../common/mixin";
@@ -6250,8 +6258,9 @@ footer .footer-bottom .left-nav li a {
   .main_banner .leftside_banner h1 {
     font: normal normal 600 36px/42px Source Serif Pro;
   }
-  .main_banner .leftside_banner h1.hide_head {
+  .main_banner .leftside_banner h2.hide_head {
     display: block;
+    font: normal normal 600 36px/42px Source Serif Pro;
   }
   .main_banner .leftside_banner .head_border {
     width: 102px;
@@ -6264,21 +6273,19 @@ footer .footer-bottom .left-nav li a {
     height: 12rem !important;
   }
   .card-container .card {
-    padding-bottom: 16px;
+    height: 18rem;
+    padding: 0 11px 16px 0;
   }
-  .card-container .card:not(:nth-child(2n)) {
-    padding-right: 21px !important;
+  .card-container .card:nth-child(even) {
+    padding-right: 0 !important;
+    padding-left: 11px !important;
   }
   .card-container .card figure {
-    border: 1px solid #E5E5E7;
-    margin: 0;
-    line-height: 0;
+    margin: auto;
   }
   .card-container .card figure img {
     max-width: 100%;
     height: 10rem !important;
-    -o-object-fit: fill;
-       object-fit: fill;
     padding: 0.5em 2em;
   }
   .card-container .card .product-details .product-title {
@@ -6459,14 +6466,15 @@ footer .footer-bottom .left-nav li a {
     display: none !important;
   }
   .card-container .card {
-    padding-bottom: 16px;
+    padding: 0 11px 16px 0;
   }
-  .card-container .card:not(:nth-child(2n)) {
-    padding-right: 21px !important;
+  .card-container .card:nth-child(even) {
+    padding-right: 0 !important;
+    padding-left: 11px !important;
   }
   .card-container .card figure img {
     max-width: 100%;
-    height: 12rem !important;
+    height: 15rem !important;
     -o-object-fit: fill;
        object-fit: fill;
     padding: 0.5em 2em;
@@ -6585,6 +6593,20 @@ footer .footer-bottom .left-nav li a {
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
+  .card-container .card {
+    padding: 0 21px 16px 0;
+  }
+  .card-container .card:nth-child(even) {
+    padding-right: 0 !important;
+    padding-left: 21px !important;
+  }
+  .card-container .card figure img {
+    max-width: 100%;
+    height: 15rem !important;
+    -o-object-fit: fill;
+       object-fit: fill;
+    padding: 0.5em 2em;
+  }
   .product_summary {
     border: none;
     -webkit-box-shadow: none;
