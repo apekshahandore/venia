@@ -11,10 +11,10 @@ const  SingleCartItem =({img, title, price, id, item})=>{
 
     const count= item.cartQuantity;
     const increseCartQuntity = () => {
-        dispatch(cartActions.incresQntity(item));
+        dispatch(cartActions.increaseQuantity(item));
       }
       const decreseCartQuntity = () => {
-        dispatch(cartActions.decrQntity(item));
+        dispatch(cartActions.decreaseQuantity(item));
       }
 
     
