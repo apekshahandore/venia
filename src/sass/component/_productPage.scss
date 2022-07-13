@@ -53,12 +53,15 @@
     }
   }
   h1{
-    @include font-three;
-    padding-top: 20px
+ 
+    font: normal normal 600 36px/45px Source Serif Pro;
+    padding-top: 20px;
+  
+
   }
   h4{
     @include font-four;
-    padding-top: 8px 0 17px 0;
+    padding: 8px 0 17px 0;
 
   }
 

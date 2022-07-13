@@ -75,6 +75,7 @@ header a {
   font-weight: 600px;
   line-height: 20px;
   color: #172026;
+  font-family: Muli;
   color: #1B252C;
 }
 
@@ -256,6 +257,7 @@ footer .footer-bottom .copyright {
   font-size: 14px;
   line-height: 17.5px;
   color: #545D63;
+  font-family: Muli;
 }
 
 footer .footer-bottom .left-nav ul {
@@ -378,13 +380,11 @@ footer .footer-bottom .left-nav li a {
   font-weight: normal;
   line-height: 24px;
   color: #172026;
+  font-family: Muli;
 }
 
 .product_details h1 {
-  font-size: 36px;
-  font-weight: 600px;
-  line-height: 45px;
-  color: #172026;
+  font: normal normal 600 36px/45px Source Serif Pro;
   padding-top: 20px;
 }
 
@@ -393,7 +393,8 @@ footer .footer-bottom .left-nav li a {
   font-weight: 600px;
   line-height: 30px;
   color: #172026;
-  padding-top: 8px 0 17px 0;
+  font-family: Muli;
+  padding: 8px 0 17px 0;
 }
 
 .product_details .stars-outer {
@@ -443,6 +444,7 @@ footer .footer-bottom .left-nav li a {
   font-weight: normal;
   line-height: 24px;
   color: #172026;
+  font-family: Muli;
 }
 
 .product_details .prod_description p button.read_more {
@@ -452,6 +454,7 @@ footer .footer-bottom .left-nav li a {
   font-weight: 600px;
   line-height: 20px;
   color: #172026;
+  font-family: Muli;
   text-decoration: underline;
 }
 
@@ -460,6 +463,7 @@ footer .footer-bottom .left-nav li a {
   font-weight: 600px;
   line-height: 30px;
   color: #172026;
+  font-family: Muli;
   padding-top: 24px;
 }
 
@@ -524,6 +528,7 @@ footer .footer-bottom .left-nav li a {
   font-weight: 600px;
   line-height: 20px;
   color: #172026;
+  font-family: Muli;
   padding-right: 38px;
 }
 
@@ -544,6 +549,7 @@ footer .footer-bottom .left-nav li a {
   font-weight: normal;
   line-height: 24px;
   color: #172026;
+  font-family: Muli;
 }
 
 .sort_dropdown select option {
@@ -551,6 +557,7 @@ footer .footer-bottom .left-nav li a {
   font-weight: normal;
   line-height: 24px;
   color: #172026;
+  font-family: Muli;
 }
 
 @use "../common/mixin";
@@ -574,6 +581,7 @@ footer .footer-bottom .left-nav li a {
   font-weight: normal;
   line-height: 24px;
   color: #172026;
+  font-family: Muli;
 }
 
 @use "../common/mixin";
@@ -590,6 +598,7 @@ footer .footer-bottom .left-nav li a {
   font-size: 20px;
   color: #181C24;
   line-height: 14px;
+  font-family: Muli;
 }
 
 .filter_aside .filter_container h6 {
@@ -597,6 +606,7 @@ footer .footer-bottom .left-nav li a {
   font-size: 16px;
   color: #181C24;
   line-height: 24px;
+  font-family: Muli;
 }
 
 .filter_aside .filter_container a {
@@ -604,6 +614,7 @@ footer .footer-bottom .left-nav li a {
   color: #181C24;
   line-height: 24px;
   text-decoration: underline;
+  font-family: Muli;
 }
 
 .filter_aside .filter_container .checkbox {
@@ -618,6 +629,7 @@ footer .footer-bottom .left-nav li a {
 
 .filter_aside .filter_container .checkbox label {
   margin-left: 0;
+  font-family: Muli;
 }
 
 .filter_aside .filter_container .attribute {
@@ -668,6 +680,7 @@ footer .footer-bottom .left-nav li a {
   font-weight: normal;
   line-height: 24px;
   color: #172026;
+  font-family: Muli;
 }
 
 .category_row .total_result {
@@ -675,6 +688,7 @@ footer .footer-bottom .left-nav li a {
   font-weight: 600px;
   line-height: 20px;
   color: #172026;
+  font-family: Muli;
   padding: 13px 0 11px 0;
 }
 
@@ -1116,6 +1130,7 @@ footer .footer-bottom .left-nav li a {
   color: #181C24;
   line-height: 24px;
   text-decoration: underline;
+  font-family: Muli;
 }
 
 .mobilefilter_menu .attribute .checkbox {
@@ -1130,6 +1145,7 @@ footer .footer-bottom .left-nav li a {
 
 .mobilefilter_menu .attribute .checkbox label {
   margin-left: 0;
+  font-family: Muli;
 }
 
 /* grid component */
@@ -6616,5 +6632,23 @@ footer .footer-bottom .left-nav li a {
   .product_summary .paypal_btn img {
     margin-left: 13rem;
   }
+}
+
+@font-face {
+  font-family: Muli;
+  src: url(../font/Muli-Black.ttf);
+  src: url(../font/Muli-BlackItalic.ttf);
+  src: url(../font/Muli-Bold.ttf);
+  src: url(../font/Muli-BoldItalic.ttf);
+  src: url(../font/Muli-ExtraBold.ttf);
+  src: url(../font/Muli-ExtraBoldItalic.ttf);
+  src: url(../font/Muli-ExtraLight.ttf);
+  src: url(../font/Muli-ExtraLightItalic.ttf);
+  src: url(../font/Muli-Italic.ttf);
+  src: url(../font/Muli-Light.ttf);
+  src: url(../font/Muli-LightItalic.ttf);
+  src: url(../font/Muli-Regular.ttf);
+  src: url(../font/Muli-SemiBold.ttf);
+  src: url(../font/Muli-SemiBoldItalic.ttf);
 }
 /*# sourceMappingURL=index.css.map */

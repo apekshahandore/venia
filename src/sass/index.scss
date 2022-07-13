@@ -19,3 +19,21 @@
 @import  "./component/mobileFilterSidebar";
 @import "./Vendor/aem-grid";    
 @import  "./component/layout";
+@font-face {
+    font-family: Muli;
+
+    src:url(../font/Muli-Black.ttf);
+    src: url(../font/Muli-BlackItalic.ttf);
+    src: url(../font/Muli-Bold.ttf);
+    src: url(../font/Muli-BoldItalic.ttf);
+    src: url(../font/Muli-ExtraBold.ttf);
+    src: url(../font/Muli-ExtraBoldItalic.ttf);
+    src: url(../font/Muli-ExtraLight.ttf);
+    src: url(../font/Muli-ExtraLightItalic.ttf);
+    src: url(../font/Muli-Italic.ttf);
+    src: url(../font/Muli-Light.ttf);
+    src: url(../font/Muli-LightItalic.ttf);
+    src: url(../font/Muli-Regular.ttf);
+    src: url(../font/Muli-SemiBold.ttf);
+    src: url(../font/Muli-SemiBoldItalic.ttf);
+}

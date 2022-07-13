@@ -9,10 +9,11 @@ header{
    top:0;
    max-width: 100%;
    margin: 0 auto;
-z-index: 999;
+   z-index: 999;
 a{
     @include font;
     color: $black-light;
+   
 
 }
 nav{
