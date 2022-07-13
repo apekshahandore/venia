@@ -23,6 +23,7 @@ return(
                   setClicked(false);
                 }}/> 
           }
+        
             <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--2 aem-GridColumn--phone--9 logo">
               <Link to="#" className="mobile_menu" onClick={()=>{setClicked(true)}}>
                 <img style={{width:"18px" ,height:"12px"}} src={require('../../Images/align-justify.svg').default} alt='search'/>

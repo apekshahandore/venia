@@ -62,6 +62,7 @@
   h4{
     @include font-four;
     padding: 8px 0 17px 0;
+ 
 
   }
 
@@ -123,7 +124,7 @@
       }
       .filter_head{
         @include font-four;
-        padding-top: 24px;
+        padding-top: 16px;
       }
      .action{
       display: flex;
@@ -131,7 +132,6 @@
      }
    
       .filter_container{
-        padding-top: 16px;
         display: flex;
         .color_box{
           @include filterBox;

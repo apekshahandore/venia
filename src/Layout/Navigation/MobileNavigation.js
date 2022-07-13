@@ -1,4 +1,6 @@
-const MobileSideBar=()=>{
+const MobileNavigation=()=>{
+
+
     return(  <aside className="mobile-menu-sidebar " >
     <div className="sidebar-container">
     <div className="section-bottom">
@@ -17,11 +19,11 @@ const MobileSideBar=()=>{
         </div>
         <div className="section-bottom">
             <ul className="left_nav">
-                <li><a href=" "><img src={require('../Images/user.svg').default} alt='mySvgImage' />Account</a></li>
+                <li><a href=" ">Account</a></li>
                 <li className="sign_up"><a href=" ">Sign Up</a></li>
             </ul>
         </div>
     </div>
 </aside>);
 }
-export default MobileSideBar;
+export default MobileNavigation;

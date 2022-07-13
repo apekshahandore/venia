@@ -6,6 +6,9 @@
     &:not(:nth-child(3n)){
         padding-right: 2em;
     }
+    &:hover{
+        transform: scale(1.02);
+    }
   
       figure {
         border: 1px solid $gray-l1;

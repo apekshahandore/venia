@@ -158,6 +158,27 @@ header nav .right_nav ul .cart_counter {
   border-radius: 50%;
 }
 
+header nav .right_nav ul .cart_counter:hover, header nav .right_nav ul .cart_counter:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 black;
+            box-shadow: 0 0 0 0 black;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 black;
+            box-shadow: 0 0 0 0 black;
+  }
+}
+
 @use "../common/mixin";
 @use "../common/variables";
 .card {
@@ -166,6 +187,11 @@ header nav .right_nav ul .cart_counter {
 
 .card:not(:nth-child(3n)) {
   padding-right: 2em;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .card figure {
@@ -464,7 +490,7 @@ footer .footer-bottom .left-nav li a {
   line-height: 30px;
   color: #172026;
   font-family: Muli;
-  padding-top: 24px;
+  padding-top: 16px;
 }
 
 .product_details .action {
@@ -475,7 +501,6 @@ footer .footer-bottom .left-nav li a {
 }
 
 .product_details .filter_container {
-  padding-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -946,6 +971,20 @@ footer .footer-bottom .left-nav li a {
   color: #FFFFFF;
   font: normal normal bold 14px/16px Muli;
   text-transform: uppercase;
+}
+
+.btn_lab:hover, .btn_lab:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  -webkit-box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 black;
+            box-shadow: 0 0 0 0 black;
+  }
 }
 
 .checkout_btn {

@@ -10,7 +10,17 @@
     color: $white;
     font: normal normal bold 14px/16px Muli;
     text-transform: uppercase;
-}
+    &:hover, 
+    &:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 0.2em rgba(#fff,0);
+    }
+
+    @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 black; 
+    }
+    }
+}   
 .checkout_btn{
     padding: 11px 73px;
 
