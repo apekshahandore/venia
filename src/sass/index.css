@@ -926,6 +926,30 @@ footer .footer-bottom .left-nav li a {
   padding-bottom: 128px;
 }
 
+.empty_card {
+  text-align: center;
+  color: red;
+  font: normal normal 600 20px/24px muli;
+}
+
+.emptyCard_message {
+  padding-top: 16px;
+  text-align: center;
+  font: normal normal 600 20px/24px muli;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @use "../common/mixin";
 @use "../common/variables";
 .accordion_box {
@@ -998,6 +1022,12 @@ footer .footer-bottom .left-nav li a {
   left: 20%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.continue_shopping {
+  margin-top: 16px;
+  padding: 11px 44px;
+  border-radius: 0;
 }
 
 @use "../common/mixin";

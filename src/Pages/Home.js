@@ -30,6 +30,7 @@ const Home=()=>{
      const LowToHigh= data?.sort((a, b) => (a.price > b.price ? 1 : -1));
      setFilter(LowToHigh);
    }
+  
     return(
     <>
     

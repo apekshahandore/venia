@@ -28,3 +28,18 @@ button{
         padding-bottom: 128px;
     }
 }
+.empty_card{
+    text-align: center;
+    color: red;
+    font: normal normal 600 20px/24px muli;
+}
+.emptyCard_message{
+    padding-top: 16px;
+    text-align: center; 
+    font: normal normal 600 20px/24px muli;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
