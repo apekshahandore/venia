@@ -18,7 +18,7 @@ export const handleCartSlice = createSlice({
   
         if (existingIndex >= 0) {
            // If item already there
-              alert("alredy exist in cart");
+          alert("alredy exist in cart");
           state.cartItems[existingIndex] = {
             ...state.items[existingIndex],
             cartQuantity: state.items[existingIndex].cartQuantity + 1,
@@ -56,9 +56,11 @@ export const handleCartSlice = createSlice({
         (item) => item.id === action.payload.id
       );
 
-      if (state.items[itemIndex].cartQuantity >= 1) {
+      if (state.items[itemIndex].cartQuantity > 1) {
         state.items[itemIndex].cartQuantity -= 1;
       }
+      
+      
       state.cartTotalAmount -= state.items[itemIndex].price;
       localStorage.setItem("cartItems", JSON.stringify(state.items));
     

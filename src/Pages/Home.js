@@ -25,10 +25,16 @@ const Home=()=>{
     // addedpart end from productContainer
 
     const totalProducts= filter.length;
-
-   const sortProduct=()=>{
-     const LowToHigh= data?.sort((a, b) => (a.price > b.price ? 1 : -1));
-     setFilter(LowToHigh);
+   
+   const sortProduct=(event)=>{
+   
+    if(event.target.value === "lowtohigh"){
+        let sortedData= data?.sort((a, b) => (a.price > b.price ? 1 : -1));
+        setFilter(sortedData);
+     }else if(event.target.value === "hightolow"){
+         let sortedData =  data?.slice().sort((a, b) => b.price - a.price);
+         setFilter(sortedData);
+     }
    }
   
     return(

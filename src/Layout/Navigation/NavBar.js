@@ -38,7 +38,7 @@ return(
               <ul>
                {navMainMenu.map((val)=>{
                  return(
-                <li key={val.id}><NavLink to=" "><span>{val.list}</span></NavLink></li>)
+                <li key={val.id}><NavLink to=''><span>{val.list}</span></NavLink></li>)
                   })}   
               </ul>
             </div>
