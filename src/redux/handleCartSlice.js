@@ -30,13 +30,14 @@ export const handleCartSlice = createSlice({
           state.items.push(tempProductItem);
           const addedItemInCart= tempProductItem.title?.split(' ').slice(0,3).join(' ');
         
-          alert(`${addedItemInCart} has been successfully in cart`);
+          alert(`${addedItemInCart} has been successfully added to your cart`);
         
         }
           localStorage.setItem("cartItems", JSON.stringify(state.items));
           },
 
     removeItemFromCart(state, action) {
+    
           const removeItemId = action.payload;
           state.items = state.items.filter(item => {
                       return item.id !== removeItemId;

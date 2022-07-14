@@ -25,24 +25,33 @@ const Home=()=>{
     // addedpart end from productContainer
 
     const totalProducts= filter.length;
-   
-   const sortProduct=(event)=>{
-   
-    if(event.target.value === "lowtohigh"){
+    const sortProductLTH=()=>{
         let sortedData= data?.sort((a, b) => (a.price > b.price ? 1 : -1));
         setFilter(sortedData);
-     }else if(event.target.value === "hightolow"){
-         let sortedData =  data?.slice().sort((a, b) => b.price - a.price);
-         setFilter(sortedData);
-     }
-   }
+       }
+       const sortProductHTL=()=>{
+        let sortedData= data?.slice().sort((a, b) => b.price - a.price);
+        setFilter(sortedData);
+       }
+
+        const sortProduct=(event)=>{
+        
+            if(event.target.value === "lowtohigh"){
+                sortProductLTH();
+            }else if(event.target.value === "hightolow"){
+                sortProductHTL();
+            }
+        }
+
+  
+
   
     return(
     <>
     
         <Banner text={`Women's`}/>
         <section className="aem-Grid aem-Grid--12 container">
-        <ProdutListHeader totalProducts={totalProducts} sortProduct={sortProduct}/>
+        <ProdutListHeader totalProducts={totalProducts} sortProduct={sortProduct} lowToHigh={sortProductLTH} highToLow={sortProductHTL}/>
       
         <aside className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--hide">
          <FilterContainer />
