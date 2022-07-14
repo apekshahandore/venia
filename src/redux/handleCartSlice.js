@@ -25,8 +25,12 @@ export const handleCartSlice = createSlice({
           };
         
         } else {
+      
           let tempProductItem = { ...action.payload, cartQuantity: 1 };
           state.items.push(tempProductItem);
+          const addedItemInCart= tempProductItem.title?.split(' ').slice(0,3).join(' ');
+        
+          alert(`${addedItemInCart} has been successfully in cart`);
         
         }
           localStorage.setItem("cartItems", JSON.stringify(state.items));
@@ -37,7 +41,7 @@ export const handleCartSlice = createSlice({
           state.items = state.items.filter(item => {
                       return item.id !== removeItemId;
                   })   
-    
+         state.cartTotalAmount -= state.items.price;
           localStorage.setItem("cartItems", JSON.stringify(state.items));
     },
 
@@ -47,6 +51,7 @@ export const handleCartSlice = createSlice({
             );
            state.items[itemIndex].cartQuantity += 1;
            state.cartTotalAmount += state.items[itemIndex].price;
+
            localStorage.setItem("cartItems", JSON.stringify(state.items));
 
           },
